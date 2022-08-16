@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Опросник владельцев котов</title>
+</head>
+
+<body style="background-color: mistyrose;">
+    <form>
+        <fieldset>
+            <legend>Имя</legend>
+            <div>
+                <label for="nikname-field">Кличка питомца &nbsp;*</label>
+                <input type="text" name="nikname" id="nikname-field" required />
+            </div>
+
+            <div>
+                <label for="name-field">Имя владельца &nbsp;*</label>
+                <input type="text" name="name" id="name-field" required />
+            </div>
+
+            <div>
+                <label for="contacts-field">Контакты владельца &nbsp;*</label>
+                <input type="text" name="contacts" id="contacts-field" required />
+            </div>
+        </fieldset>
+
+        <div>
+            <p>Выберите породу &nbsp;*</p>
+            <select name="breed" id="breed-field" required>
+                <option value="">----</option>
+                <option value="metis">Метис</option>
+                <option value="gold chincchilla">Золотистая шиншилла</option>
+                <option value="munchkin">Манчкин</option>
+                <option value="maine coon">Мейн-кун</option>
+                <option value="siberian">Сибирская</option>
+            </select>
+        </div>
+
+        <p>Чем питается?</p>
+        <div>
+            <input type="checkbox" name="feed" id="dry-feed" value="dry feed" />
+            <label for="dry-feed">Сухой корм</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="feed" id="wet-feed" value="wet feed" />
+            <label for="wet-feed">Влажный корм</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="feed" id="natural-feed" value="natural feed" />
+            <label for="natural-feed">Натуральный корм</label>
+        </div>
+
+        <p>Пол питомца &nbsp;*</p>
+        <div>
+            <input type="radio" name="sex" id="female" value="female" required />
+            <label for="female">Самка</label>
+        </div>
+
+        <div>
+            <input type="radio" name="sex" id="male" value="male" required />
+            <label for="male">Самец</label>
+        </div>
+
+        <p>Комментарий</p>
+        <textarea name="comments" id="comments-field" cols="30"
+            rows="10">Если хотите добавить что-то важное, можно написать здесь</textarea>
+
+        <div>
+            <label for="photo-field">Можете добавить фотографию питомца</label>
+            <input type="file" name="photo" id="photo-field" />
+        </div>
+
+        <button>Сохранить</button>
+    </form>
+</body>
+
+</html>
