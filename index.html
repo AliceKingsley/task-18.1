@@ -9,8 +9,8 @@
     <title>Опросник владельцев котов</title>
 </head>
 
-<body style="background-color: mistyrose;">
-    <form>
+<body>
+    <form class="form">
         <fieldset>
             <legend>Имя</legend>
             <div>
@@ -43,17 +43,17 @@
 
         <p>Чем питается?</p>
         <div>
-            <input type="checkbox" name="feed" id="dry-feed" value="dry feed" />
+            <input type="checkbox" name="feed" id="dry-feed" value="Сухой корм" />
             <label for="dry-feed">Сухой корм</label>
         </div>
 
         <div>
-            <input type="checkbox" name="feed" id="wet-feed" value="wet feed" />
+            <input type="checkbox" name="feed" id="wet-feed" value="Влажный корм" />
             <label for="wet-feed">Влажный корм</label>
         </div>
 
         <div>
-            <input type="checkbox" name="feed" id="natural-feed" value="natural feed" />
+            <input type="checkbox" name="feed" id="natural-feed" value="Натуральный корм" />
             <label for="natural-feed">Натуральный корм</label>
         </div>
 
@@ -70,15 +70,17 @@
 
         <p>Комментарий</p>
         <textarea name="comments" id="comments-field" cols="30"
-            rows="10">Если хотите добавить что-то важное, можно написать здесь</textarea>
+            rows="10" placeholder="Если хотите добавить что-то важное, можно написать здесь"></textarea>
 
         <div>
             <label for="photo-field">Можете добавить фотографию питомца</label>
             <input type="file" name="photo" id="photo-field" />
         </div>
 
-        <button>Сохранить</button>
+        <button class="button">Сохранить</button>
     </form>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
