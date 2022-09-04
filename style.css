@@ -1,3 +1,7 @@
 input:required:valid, select:required:valid {
     border-color: green;
 }
+
+body {
+    background-color: mistyrose;
+}

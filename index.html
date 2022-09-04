@@ -9,8 +9,8 @@
     <title>Опросник владельцев котов</title>
 </head>
 
-<body style="background-color: mistyrose;">
-    <form>
+<body>
+    <form id="formElem" method="post" action="https://httpbin.org/post">
         <fieldset>
             <legend>Имя</legend>
             <div>
@@ -70,14 +70,14 @@
 
         <p>Комментарий</p>
         <textarea name="comments" id="comments-field" cols="30"
-            rows="10">Если хотите добавить что-то важное, можно написать здесь</textarea>
+            rows="10" placeholder="Если хотите добавить что-то важное, можно написать здесь"></textarea>
 
         <div>
             <label for="photo-field">Можете добавить фотографию питомца</label>
             <input type="file" name="photo" id="photo-field" />
         </div>
 
-        <button>Сохранить</button>
+        <button class="button">Сохранить</button>
     </form>
 </body>
 
