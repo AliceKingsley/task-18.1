@@ -1,4 +1,5 @@
 const button = document.querySelector('.button');
+const form = document.querySelector('form');
 
 button.addEventListener("submit", async function () {
 
@@ -7,9 +8,9 @@ button.addEventListener("submit", async function () {
             headers: {
                 'Content-Type': 'multipart/form-data;charset=utf-8'
             },
-            body: new FormData(formElem)
+            body: new FormData(form)
         });
 
-    let result = await response;
-    console.log(response);
+    let result = await response.formData();
+    console.log(result);
 });
